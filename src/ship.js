@@ -1,5 +1,5 @@
-export function Ship(size) {
-  let size = size;
+export function Ship(sz) {
+  let size = sz;
   let hits = 0;
 
   function hit() {
@@ -8,7 +8,7 @@ export function Ship(size) {
 
   function isSunk() {
     if(hits >= size) return true;
-    return false;
+    else return false;
   }
   return { hit, isSunk }
 }
